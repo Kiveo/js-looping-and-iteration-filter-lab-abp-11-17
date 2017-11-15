@@ -18,11 +18,11 @@ function fuzzyMatch(drivers, string) {
   })
 }
 
+debugger;
 // filter (value, index, array)
 //scope within nested vs outside
 function matchName(collection, string) {
   var d2 = collection.filter(function(other) {
-    debugger;
     if (other.name === string) {
       return true;
     } else {
@@ -31,13 +31,3 @@ function matchName(collection, string) {
   } ) ;
   return d2;
 }
-
-/* function callMe (collection, string) {
-  debugger;
-    if (collection.name === string) {
-      return true;
-    } else {
-      return false;
-    }
-}
-*/
